@@ -5,6 +5,8 @@ import pickle
 import tensorflow as tf
 from preprocess import *
 
+import nltk
+nltk.download('stopwords')
 
 
 encoder = pickle.load(open('encoder.pkl', 'rb'))
